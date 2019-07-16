@@ -28,7 +28,7 @@ A _functional interface_ is an interface that specifies exactly one abstract met
     }
     
 An interface is still a functional interface if it has many default methods as long as it specifies _only one abstract method_.
-**Quiz 3.2: Functional interface**
+**Quiz : Functional interface**
 
 Which of these interfaces are functional interfaces?
 
