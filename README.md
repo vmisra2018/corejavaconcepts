@@ -63,7 +63,7 @@ Note that there’s a special rule for a void method invocation defined in the J
 ### Why can we pass a lambda only where a functional interface is expected?
 Most Java programmers are already familiar with the idea of an interface with a single abstract method (for example, for event handling). However, the most important reason is that functional interfaces were already extensively used before Java 8. This means that they provide a nice migration path for using lambda expressions. In fact, if you’ve been using functional interfaces such as Comparator and Runnable or even your own interfaces that happen to define only a single abstract method, you can now use lambda expressions without changing your APIs.
 
-**Quiz 3.3: Where can you use lambdas?**
+**Quiz : Where can you use lambdas?**
 
 Which of the following are valid uses of lambda expressions?
 
