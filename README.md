@@ -189,9 +189,9 @@ At first glance, a lambda looks like a shorthand version of an anonymous inner c
 
 #### Anonymous Inner Classes (AICs)
 
-   --The compiler generates a class file for each anonymous inner class.
+  1) The compiler generates a class file for each anonymous inner class.
         For example – AnonymousInnerClass$1.class
-   -- Like all classes, it needs to be loaded and verified at startup.
+  2)  Like all classes, it needs to be loaded and verified at startup.
 
 #### Lambdas
 
@@ -199,11 +199,13 @@ The key to lambda implementation is the I**nvokeDynamic instruction**, introduce
 
 A lambda works like this:
 
- -- Generates invokedynamic call site and uses a lambdafactory to return the functional implementation.
---Lambda converted to a method to be invoked by invokedynamic.
---The method is stored in a class as a private static method.
+1)  Generates invokedynamic call site and uses a lambdafactory to return the functional implementation.
+ 
+2) Lambda converted to a method to be invoked by invokedynamic.
+
+3) The method is stored in a class as a private static method.
     
-   There are two lambda types. **Non-capturing lambdas** only use fields inside their bodies, whereas **capturing lambdas** access fields outside their bodies.
+ 4)   There are two lambda types. **Non-capturing lambdas** only use fields inside their bodies, whereas **capturing lambdas** access fields outside their bodies.
 
 #####  Non-Capturing Lambdas
 
