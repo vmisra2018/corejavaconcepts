@@ -171,14 +171,21 @@ Rest of the stuff is ignored:
 At first glance, a lambda looks like a shorthand version of an anonymous inner class. But they are not. 
 **Key Points which diiferenciate them from AICs**
 
-   Lambdas implement a functional interface AICs do not implement Functional interface but can implement any other normal    interface .AICs inside a  class or method.
-   Anonymous Inner Classes can extend a class or implement an interface with any number of methods.
-    Variables – Lambdas can only access final or effectively final.AICs can access only final.
-   State – Anonymous inner classes can use instance variables and thus can have state, lambdas cannot use instance variables.
-   Scope – Lambdas can't define a variable with the same name as a variable in enclosing scope.
-    Compilation – Anonymous compiles to a class, while lambda is an invokedynamic instruction.
+   1) Lambdas  implement a functional interface AICs do not implement Functional interface but can implement any other normal    interface .AICs inside a  class or method.
+   
+  2) Anonymous Inner Classes can extend a class or implement an interface with any number of methods.
   
-  ###  How They Work
+   3) **Variables** – Lambdas can only access final or effectively final.AICs can access only final.
+   
+
+ 4) **State** – Anonymous inner classes can use instance variables and thus can have state, lambdas cannot use instance variables.
+
+  5) **Scope** – Lambdas can't define a variable with the same name as a variable in enclosing scope.
+  
+  6)  **Compilation** – Anonymous compiles to a class, while lambda is an invokedynamic instruction.
+  
+  
+  ###    **How They Work**
 
 #### Anonymous Inner Classes (AICs)
 
